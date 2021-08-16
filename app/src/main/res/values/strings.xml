@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Room Booker</string>
+    <string name="button_title">Book!</string>
+    <string name="booking_success">Booking succeeded!</string>
+    <string name="booking_failure">Booking failed!</string>
+    <plurals name="spots_remaining">
+        <item quantity="one">%d spot remaining</item>
+        <item quantity="other">%d spots remaining</item>
+    </plurals>
+</resources>
