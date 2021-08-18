@@ -17,7 +17,7 @@ With more time, I would have addressed the following:
 - Unit/UI testing is needed!
 - Although the UI is adaptive for different screen sizes and orientations, it would be better to alter the layout for larger screen sizes and landscape orientations. I held off on using it because it's still experimental, but the [LazyVerticalGrid](https://developer.android.com/jetpack/compose/lists#grids) composable looks promising and seems to work well in my testing as a scrollable grid of cells that adapts to the screen size.
 - There should be improved handling of errors and exceptions to provide a better UX. Why did a booking fail? When is there a problem with the internet connection?
-- To actually serve as a usable app, at a minimum, there needs to be a way to indicate who the uses are when booking and what date and time among those available that they want to book a room for.   
+- To actually serve as a usable app, at a minimum, there needs to be a way when booking to indicate who the users are and what date and time they want among those available.
 
 ## Installation
 
