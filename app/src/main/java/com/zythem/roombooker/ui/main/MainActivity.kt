@@ -6,10 +6,6 @@ import androidx.activity.compose.setContent
 import androidx.activity.viewModels
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Surface
-import androidx.compose.material.Text
-import androidx.compose.runtime.Composable
-import androidx.compose.ui.tooling.preview.Preview
-import com.zythem.roombooker.ui.main.MainViewModel
 import com.zythem.roombooker.ui.main.composables.RoomBookerApp
 import com.zythem.roombooker.ui.theme.RoomBookerTheme
 import dagger.hilt.android.AndroidEntryPoint
