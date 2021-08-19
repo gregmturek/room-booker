@@ -35,8 +35,12 @@ fun RoomBookerApp(viewModel: MainViewModel) {
     val toolbarOffsetHeightPx = remember { mutableStateOf(0f) }
     val nestedScrollConnection = remember {
         object : NestedScrollConnection {
-            override fun onPreScroll(available: Offset, source: NestedScrollSource): Offset {
-                val delta = available.y
+            override fun onPostScroll(
+                consumed: Offset,
+                available: Offset,
+                source: NestedScrollSource
+            ): Offset {
+                val delta = consumed.y
                 val newOffset = toolbarOffsetHeightPx.value + delta
                 toolbarOffsetHeightPx.value = newOffset.coerceIn(-toolbarHeightPx, 0f)
                 return Offset.Zero
@@ -91,8 +95,6 @@ fun RoomBookerApp(viewModel: MainViewModel) {
                 .offset { IntOffset(x = 0, y = toolbarOffsetHeightPx.value.roundToInt()) },
             title = { Text(stringResource(id = R.string.app_name)) }
         )
-
-
     }
 }
 
