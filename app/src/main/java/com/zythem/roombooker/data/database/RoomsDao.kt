@@ -9,7 +9,7 @@ import com.zythem.roombooker.data.model.Room
 @Dao
 interface RoomsDao {
     @Insert(onConflict = OnConflictStrategy.REPLACE)
-    suspend fun save(room: Room)
+    suspend fun save(room: List<Room>)
 
     @Query("SELECT * FROM room")
     suspend fun load(): List<Room>

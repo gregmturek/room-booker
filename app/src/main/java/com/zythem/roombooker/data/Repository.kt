@@ -35,9 +35,8 @@ class Repository @Inject constructor(
     }
 
     private suspend fun saveRooms(rooms: List<Room>) {
-        rooms.forEach {
-            roomsDao.save(it)
-        }
+        roomsDao.save(rooms)
+
     }
 
     companion object {
